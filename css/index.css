@@ -1,0 +1,183 @@
+body,h1,h2{
+    margin: 0;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+button{
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+input{
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+table{
+    border-collapse: collapse;
+}
+th,td{
+    padding: 0;
+}
+
+
+
+
+body {
+    background: #eee;
+    font-size: 14px;
+}
+button{
+    padding: 5px 10px;
+    color: #fff;
+}
+button.btnBg1{
+    background: #5cb85c;
+}
+button.btnBg2{
+    background: #d9534f;
+}
+
+
+/* 头部 */
+#head {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    background: #354457;
+    color: #b3bcc5;
+    padding-left: 20px;
+}
+#head img {
+    width: 30px;
+    height: 30px;
+}
+#head h1 {
+    font-size: 16px;
+    margin-left: 10px;
+    font-weight: normal;
+}
+
+/* menu */
+#menu{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    bottom: 0;
+    width: 200px;
+    background: #4d5e70;
+    
+    color: #b3bcc5;
+}
+#menu h2 {
+    font-weight: normal;
+    font-size: 20px;
+    padding-left: 15px;
+    line-height: 50px;
+}
+#menu li{
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#menu li.active {
+    background: #ddd;
+    color: #354457;
+}
+
+/* content */
+#content{
+    position: absolute;
+    left: 200px;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+
+    padding: 20px;
+}
+#content > div{
+    display: none;
+}
+#content > div.active{
+    display: block;
+}
+
+/* 搜索框 */
+.searchBox {
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.searchBox input{
+    width: 35%;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 10px;
+}
+.searchBox button:nth-of-type(2), .addBtn button:nth-child(2) {
+    margin-left: 10px;
+}
+
+/* 新增按钮 */
+.addBtn {
+    margin: 10px 0;
+}
+
+/* 表格 */
+.studentTable table {
+    width: 100%;
+    text-align: center;
+}
+.studentTable td, .studentTable th{
+    border: 1px solid #ddd;
+    padding: 5px 0;
+}
+.studentTable thead {
+    background: #e3e8ee;
+    color: #646987;
+}
+.studentTable tbody {
+    background: #fff;
+}
+
+/* 翻页 */
+#page{
+    margin-top: 30px;
+}
+
+/* 新增学生 */
+#addForm {
+    width: 50%;
+    margin: 30px auto;
+}
+#addForm div {
+    margin: 10px 0;
+}
+#addForm label {
+    width: 100px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px;
+}
+#addForm input[type="text"]{
+    height: 30px;
+    padding: 0 10px;
+}
+#addForm .regValidate{
+    margin-left: 10px;
+    line-height: 30px;
+    color: red;
+}
+#addForm div:last-child{
+    padding-left: 100px;
+}

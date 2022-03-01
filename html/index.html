@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../page/css/page.css">
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header id="head">
+        <img src="../images/logo.png" alt="">
+        <h1>渡一教育</h1>
+    </header>
+
+    <!-- 左边菜单 -->
+    <div id="menu">
+        <h2>学生管理</h2>
+        <ul>
+            <li class="active">学生列表</li>
+            <li>新增学生</li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <div class="active">
+            <!-- 搜索框 -->
+            <div class="searchBox">
+                <select name="">
+                    <option value="id">学号</option>
+                    <option value="name">姓名</option>
+                    <option value="sex">性别</option>
+                </select>
+                <input type="text" placeholder="请输入搜索的内容">
+                <button class="btnBg1" id="searchBtn">搜索</button>
+                <button class="btnBg2" id="backBtn">返回</button>
+            </div>
+
+            <!-- 新增按钮 -->
+            <div class="addBtn">
+                <button class="btnBg1" id="randomAdd">随机新增</button>
+                <button class="btnBg2" id="customAdd">自定义新增</button>
+            </div>
+
+            <!-- 学生数据表格 -->
+            <div class="studentTable">
+                <!-- <table>
+                    <thead>
+                        <tr>
+                            <th>学号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>邮箱</th>
+                            <th>年龄</th>
+                            <th>手机号</th>
+                            <th>住址</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>20</td>
+                            <td>任宁俢</td>
+                            <td>男</td>
+                            <td>d.qhjg@mjpk.bb</td>
+                            <td>30</td>
+                            <td>15240247522</td>
+                            <td>广州市</td>
+                            <td>
+                                <button class="editBtn btnBg1">编辑</button>
+                                <button class="delBtn btnBg2">删除</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> -->
+            </div>
+
+            <!-- 分页 -->
+            <div id="page"></div>
+        </div>
+
+        <div>
+            <!-- 新增学生 -->
+            <form id="addForm">
+                <div>
+                    <label for="name">姓名</label>
+                    <input type="text" name="name" id="name" placeholder="请输入学生姓名">
+                    <span id="validateName" class="regValidate"></span>
+                </div>
+                <div>
+                    <label for="sex">性别</label>
+                    <span>
+                        男<input type="radio" name="sex" id="male" value="男" checked>
+                    </span>
+                    <span>
+                        女<input type="radio" name="sex" id="female" value="女">
+                    </span>
+                </div>
+                <div>
+                    <label for="email">邮箱</label>
+                    <input type="text" name="email" id="email" placeholder="请输入邮箱地址">
+                    <span id="validateEmail" class="regValidate"></span>
+                </div>
+                <div>
+                    <label for="age">年龄</label>
+                    <input type="text" id="age" name="age" placeholder="请输入年龄">
+                    <span id="validateAge" class="regValidate"></span>
+                </div>
+                <div>
+                    <label for="tel">手机号</label>
+                    <input type="text" id="tel" name="tel" placeholder="请输入手机号">
+                    <span id="validateTel" class="regValidate"></span>
+                </div>
+                <div>
+                    <label for="address">地址</label>
+                    <input type="text" id="address" name="add" placeholder="请输入地址">
+                    <span id="validateAddress" class="regValidate"></span>
+                </div>
+                <div>
+                    <button class="submitBtn btnBg1" type="button">提交</button>
+                    <button class="returnBtn btnBg2" type="button">返回</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="../js/mock.js"></script>
+    <script src="../page/js/page.js"></script>
+    <script src="../api/api.js"></script>
+    <script src="../js/validate.js"></script>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>

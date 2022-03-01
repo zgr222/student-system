@@ -1,0 +1,28 @@
+#myPage{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;  /* 禁止用户选中文字 */
+}
+#myPage li{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+#myPage li:not(.ellipsis){
+    cursor: pointer;
+}
+#myPage li:not(.ellipsis):not(.active):hover{
+    background: #bebebe;
+    color: #eee;
+}
+#myPage li.active{
+    background: #548ac5;
+    color: #eee;
+}

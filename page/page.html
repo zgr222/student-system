@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/page.css">
+</head>
+
+<body>
+    <div id="demo">
+
+    </div>
+    <script src="../js/jquery-3.3.1.js"></script>
+    <script src="js/page.js"></script>
+
+    <script>
+        $('#demo').page({
+            cn: 15,     //当前的页码
+            tn: 20,     //总页码数
+            mn: 8,      //最多渲染多少个页码（超过这个值就要显示省略号）
+            callBack: function (n) {
+                // n就是当前的页码
+                console.log(n);
+            }
+        })
+    </script>
+</body>
+
+</html>
